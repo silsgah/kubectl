@@ -17,4 +17,12 @@ We will use kind to create a local Kubernetes cluster. It will be a simple clust
 
 A local cluster like the one we are creating here is useful for development and CI pipelines, where you need a minimal cluster to run integration tests for your applications.
 
+#### We will create a cluster consisting of
+
+1 control plane node -> where the core Kubernetes components run
+2 worker nodes -> where the apps we will deploy will run.
+
+Create the cluster with the name you want (e.g. cluster-123) using the above configuration:
+1. kind create cluster --config kind.yaml --name cluster-123
+
 
